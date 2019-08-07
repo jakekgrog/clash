@@ -17,6 +17,8 @@ function createWindow() {
     mainWindow.on('closed', function () {
         mainWindow = null
     })
+
+    mainWindow.setMenuBarVisibility(false)
 }
 
 app.on('ready', createWindow);
