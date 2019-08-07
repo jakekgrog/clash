@@ -1,0 +1,15 @@
+.input {
+    margin-bottom: 15px;
+}
+
+.logo-holder {
+    padding: 20px;
+}
+
+.login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
