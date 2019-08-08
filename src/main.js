@@ -8,7 +8,8 @@ const url = require('url');
 let mainWindow;
 
 function createWindow() {
-    mainWindow = new BrowserWindow({width: 1080, height: 720, icon:__dirname+ '/public/favicon.ico'});
+
+    mainWindow = new BrowserWindow({width: 1080, height: 720, icon:__dirname+ '/../public/favicon.png'});
 
     mainWindow.loadURL('http://localhost:3000');
 
@@ -17,6 +18,8 @@ function createWindow() {
     mainWindow.on('closed', function () {
         mainWindow = null
     })
+
+    mainWindow.setMenuBarVisibility(false)
 }
 
 app.on('ready', createWindow);
