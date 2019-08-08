@@ -8,7 +8,8 @@ const url = require('url');
 let mainWindow;
 
 function createWindow() {
-    mainWindow = new BrowserWindow({width: 1080, height: 720, icon:__dirname+ '/public/favicon.ico'});
+    console.log(__dirname+ '/../public/favicon.png')
+    mainWindow = new BrowserWindow({width: 1080, height: 720, icon:__dirname+ '/../public/favicon.png'});
 
     mainWindow.loadURL('http://localhost:3000');
 
